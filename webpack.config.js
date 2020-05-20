@@ -53,6 +53,12 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
+      {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            'file-loader',
+          ],
+        },
     ]
   },
   plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') })]
