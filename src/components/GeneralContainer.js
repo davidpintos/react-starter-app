@@ -3,17 +3,13 @@ import { MainComponent } from './MainComponent';
 
 const mapStateToProps = state => {
   return {
-    currentLanguage: state.langReducer
+    state
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-    handleChangeLanguage: ({currentTarget}) => {
-      if (currentTarget.value === 'es') {
-        dispatch({ type: 'CHANGE_LANGUAGE', payload: 'es'});
-      } else {
-        dispatch({ type: 'CHANGE_LANGUAGE', payload: 'en'});
-      }
+    handleClick: () => {
+      console.log("Hola");
     }
 });
 

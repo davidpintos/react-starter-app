@@ -1,7 +1,7 @@
-export const langReducer = function (state = 'en', {type, payload}) {
+export const exampleReducer = function (state = {}, {type, payload}) {
     let nextState = state;
 
-    if (type === "CHANGE_LANGUAGE") {
+    if (type === "ANY_ACTION") {
         nextState = payload;
     }
 

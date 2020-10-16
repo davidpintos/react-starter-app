@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import {langReducer} from '../components/reducer';
+import {exampleReducer} from '../components/reducer';
 
 export default combineReducers({
-  langReducer,
+  hello: exampleReducer,
 })
